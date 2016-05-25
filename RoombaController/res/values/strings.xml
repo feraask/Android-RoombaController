@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Roomba Controller</string>
+    <string name="action_settings">Settings</string>
+    <string name="tcpHandler">In TCPHandler Activity... THIS SHOULD NOT HAPPEN!</string>
+    <string name="enterIP">Enter the IP Address</string>
+    <string name="connectButton">Connect</string>
+    <string name="title_activity_roomba_control">Roomba Control</string>
+    <string name="upButton">Forward</string>
+    <string name="leftButton">Left</string>
+    <string name="rightButton">Right</string>
+    <string name="downButton">Back</string>
+    <string name="stopButton">STOP</string>
+    <string name="title_activity_tcphandler">TCPHandler</string>
+    <string name="connectionStatus">Connection Status</string>
+
+</resources>

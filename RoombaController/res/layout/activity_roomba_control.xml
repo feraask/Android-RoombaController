@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RoombaControl" >
+
+    <Button
+        android:id="@+id/UpButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="@string/upButton"
+        android:onClick="sendCommand" />
+
+    <Button
+        android:id="@+id/DownButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/UpButton"
+        android:layout_below="@+id/RightButton"
+        android:text="@string/downButton"
+        android:onClick="sendCommand" />
+
+    <Button
+        android:id="@+id/RightButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/LeftButton"
+        android:layout_alignBottom="@+id/LeftButton"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/DownButton"
+        android:text="@string/rightButton"
+        android:onClick="sendCommand" />
+
+    <Button
+        android:id="@+id/LeftButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/UpButton"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/UpButton"
+        android:text="@string/leftButton"
+        android:onClick="sendCommand" />
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="@string/stopButton"
+        android:onClick="sendCommand" />
+
+    <TextView
+        android:id="@+id/ConnectedIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" 
+        android:text="@string/connectionStatus"
+        android:gravity="center" />
+
+</RelativeLayout>
